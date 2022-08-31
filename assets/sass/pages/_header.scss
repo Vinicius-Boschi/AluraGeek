@@ -1,0 +1,55 @@
+.header {
+    background-color: $white;
+    padding: 2rem;
+
+    &__navbar {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+    }
+
+    &__search {
+        display: flex;
+        align-items: center;
+        margin-left: 2rem;
+    }
+
+    &__input {
+        border-radius: 20px;
+        border: none;
+        padding: 1rem;
+        background: $white-two;
+        width: 24rem;
+
+        &::placeholder {
+            color: $gray;
+            font-size: 14px;
+        }
+
+        &-img {
+            margin-left: -3rem;
+            cursor: pointer;
+        }
+    }
+
+    &__button {
+        border: 1px solid $blue;
+        background: none;
+        color: $blue;
+        width: 9rem;
+        padding: 1rem;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 1s linear;
+
+        &:hover {
+            background: $blue;
+            border: 1px solid $black;
+            color: $white;
+        }
+    }
+}

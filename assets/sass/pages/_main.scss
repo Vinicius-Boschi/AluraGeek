@@ -1,0 +1,73 @@
+.main {
+
+    &__content {
+        background-image: url('/assets/img/Hero.png');
+        height: 45vh;
+        background-repeat: no-repeat;
+        width: 100%;
+        line-height: 1.3;
+        display: flex; 
+        justify-content: flex-end; 
+        align-items: flex-start; 
+        flex-direction: column;
+        color: $white;
+    }
+
+    &__info {
+        margin: 0rem 0rem 4rem 4rem;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 50px;
+    }
+
+    &__subtitle {
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: .8rem;
+    }
+
+    &__button {
+        background-color: $blue;
+        color: $white;
+        border: none;
+        padding: 1rem;
+    }
+
+    &__store {
+        padding: 3rem;
+    }
+
+    &__title-store {
+        font-size: 32px;
+        font-weight: bold;
+        display: flex;
+        margin-bottom: 2rem;
+        justify-content: space-between;
+    }
+
+    &__link {
+        background: none;
+        border: none;
+        color: $blue;
+        font-weight: bold;
+        font-size: 16px;
+        margin-left: -5px;
+        cursor: pointer;
+
+        &.right {
+            margin-right: 3.5rem;
+        }
+    }
+
+    &__info-store {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        line-height: 1.5;
+    }
+
+    &__price {
+        font-weight: bold;
+    }
+}
