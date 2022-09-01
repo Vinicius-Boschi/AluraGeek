@@ -10,3 +10,15 @@ $light-blue: #E0EAF9;
 $black: #000000;
 
 $font: 'Raleway', 'sans-serif';
+
+@mixin phone {
+    @media (min-width: 375px) and (max-width: 540px) { @content; }
+}
+
+@mixin tablet {
+    @media (min-width: 541px) and (max-width: 768px) { @content; }
+}
+
+@mixin notebook {
+    @media (min-width: 769px) and (max-width: 1279px) { @content; }
+}

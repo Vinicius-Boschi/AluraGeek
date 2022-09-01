@@ -1,6 +1,12 @@
 .header {
     background-color: $white;
     padding: 2rem;
+    width: calc(100% - 4rem);
+    position: fixed;
+
+    &-fixed {
+        background-color: $light-blue;
+    }
 
     &__navbar {
         display: flex;
@@ -16,6 +22,14 @@
         display: flex;
         align-items: center;
         margin-left: 2rem;
+
+        @include phone {
+            display: none;
+        }
+
+        @include tablet {
+            display: none;
+        }
     }
 
     &__input {
@@ -33,6 +47,14 @@
         &-img {
             margin-left: -3rem;
             cursor: pointer;
+
+            @include phone {
+                margin-left: -1rem;
+            }
+        }
+
+        @include notebook {
+            width: 15rem;
         }
     }
 
@@ -41,7 +63,6 @@
         background: none;
         color: $blue;
         width: 9rem;
-        padding: 1rem;
         font-size: 16px;
         cursor: pointer;
         transition: all 1s linear;
@@ -50,6 +71,10 @@
             background: $blue;
             border: 1px solid $black;
             color: $white;
+        }
+
+        @include phone {
+            margin-right: -2rem;
         }
     }
 }

@@ -2,6 +2,20 @@
     font-family: $font;
     font-weight: 600;
 
+    &__form {
+        @include phone {
+            text-align: initial;
+        }
+
+        @include tablet {
+            text-align: initial;
+        }
+
+        @include notebook {
+            text-align: initial;
+        }
+    }
+
     &__title {
         margin-bottom: .8rem;
     }
@@ -19,7 +33,30 @@
             align-items: flex-start;
             margin-bottom: 1rem;
         }
+
+        @include phone {
+            flex-direction: column;
+            width: calc(100% - 4rem);
+            text-align: center;
+            align-items: center;
+        }
+
+        @include tablet {
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+
+        @include notebook {
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
     } 
+
+    &__list {
+        margin-bottom: 2rem;
+    }
     
     &__lists {
         color: $gray-two;
@@ -41,6 +78,10 @@
         padding: .5rem;
         border: none;
         border-bottom: 1px solid $black;
+
+        @include phone {
+            width: 18rem;
+        }
     }
 
     &__button {
