@@ -5,9 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Document</title>
+    <title>Tela de Login</title>
 </head>
 <body>
-    
+        
+    <header class="header">
+        <navbar class="header__navbar">
+            <div class="header__nav">
+                <img src="../img/Logo.png" alt="logo" class="header__logo">
+                <div class="header__search">
+                    <input class="header__input" type="text" name="search" id="search" placeholder="Oque deseja encontrar?">
+                    <img src="../img/Icone.png" alt="icone de pesquisa" class="header__input-img">
+                </div>
+            </div>
+        </navbar>
+    </header>
+
+    <main class="main">
+        <form action="#" class="main__form">
+            <div class="main__form-content">
+                <h1 class="main__h1">Iniciar sessão</h1>
+                <div class="main__email">
+                    <label for="email" class="main__label">Email</label>
+                    <input type="email" name="email" id="email" class="main__input" placeholder="andrelisboa@gmail.com">
+                </div>
+                <div class="main__password">
+                    <label for="password" class="main__label">Senha</label>
+                    <input type="password" name="password" id="password" class="main__input" placeholder="********">
+                </div>
+            </div>
+            <button class="main__button">Entrar</button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <section class="footer__contact">
+            <img src="../img/Logo.png" alt="logo" class="footer__logo">
+            <ul class="footer__list">
+                <li class="footer__lists">
+                    <a href="#">Quem somos nós</a>
+                </li>
+                <li class="footer__lists">
+                    <a href="#">Política de Privacidade</a>
+                </li>
+                <li class="footer__lists">
+                    <a href="#">Programa de fidelidade</a>
+                </li>
+                <li class="footer__lists">
+                    <a href="#">Nossas lojas</a>
+                </li>
+                <li class="footer__lists">
+                    <a href="#">Quero ser franqueado</a>
+                </li>
+                <li class="footer__lists">
+                    <a href="#">Anuncie aqui</a>
+                </li>
+            </ul>
+            <form action="#" class="footer__form">
+                <h2 class="footer__title">Fale conosco</h2>
+                <div class="footer__contact-input">
+                    <label for="name" class="footer__label">Nome</label>
+                    <input type="text" name="name" id="name" class="footer__input" placeholder="André Lisboa">
+                </div>
+                <div class="footer__contact-input">
+                    <label for="name" class="footer__label">Mensagem</label>
+                    <textarea id="message" name="message" rows="5" cols="33" placeholder="Escreva sua mensagem" class="footer__input"></textarea>
+                </div>
+                <button class="footer__button">Enviar mensagem</button>
+            </form>
+        </section>
+        <div class="footer__creator">
+            <p class="footer__name">Desenvolvido por <a href="https://github.com/Vinicius-Boschi">Vinícius Boschi</a></p>
+            <p class="footer__copy">Todos os direitos reservados &copy; 2022</p>
+        </div>
+    </footer>
+
 </body>
 </html>

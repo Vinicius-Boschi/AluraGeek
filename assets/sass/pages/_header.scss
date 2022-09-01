@@ -73,6 +73,11 @@
             color: $white;
         }
 
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
         @include phone {
             margin-right: -2rem;
         }

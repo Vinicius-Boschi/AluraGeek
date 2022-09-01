@@ -127,6 +127,10 @@ body {
   border: 1px solid #000000;
   color: #FFFFFF;
 }
+.header__button a {
+  text-decoration: none;
+  color: inherit;
+}
 @media (min-width: 375px) and (max-width: 540px) {
   .header__button {
     margin-right: -2rem;
@@ -234,7 +238,11 @@ body {
   cursor: pointer;
 }
 .main__link.right {
-  margin-right: 3.5rem;
+  margin-right: 4rem;
+}
+.main__link a {
+  text-decoration: none;
+  color: inheirt;
 }
 .main__info-store {
   display: grid;
@@ -392,6 +400,34 @@ body {
   color: inherit;
   font-weight: bold;
   cursor: pointer;
+}
+
+.main__form {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main__form button {
+  width: 25rem;
+}
+.main__h1 {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+.main__input {
+  width: 25rem;
+  height: 2rem;
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 1px solid #000000;
+}
+.main__email, .main__password {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

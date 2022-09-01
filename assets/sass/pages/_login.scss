@@ -1,0 +1,34 @@
+.main {
+    
+    &__form {
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        button {
+            width: 25rem;
+        }
+    }
+
+    &__h1 {
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    &__input {
+        width: 25rem;
+        height: 2rem; 
+        padding: .5rem;
+        border: none;
+        border-bottom: 1px solid $black;
+    }
+
+    &__email, &__password {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+}
