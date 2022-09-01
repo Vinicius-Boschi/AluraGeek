@@ -13,7 +13,7 @@
         color: $white;
 
         @include phone {
-            height: auto;   
+            height: 60vh;   
         }
 
         @include tablet {

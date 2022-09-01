@@ -147,7 +147,7 @@ body {
 }
 @media (min-width: 375px) and (max-width: 540px) {
   .main__content {
-    height: auto;
+    height: 60vh;
   }
 }
 @media (min-width: 541px) and (max-width: 768px) {
