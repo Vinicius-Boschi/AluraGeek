@@ -1,0 +1,74 @@
+.footer {
+    font-family: $font;
+    font-weight: 600;
+
+    &__title {
+        margin-bottom: .8rem;
+    }
+
+    &__contact {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        background-color: $light-blue;
+        padding: 2rem;
+
+        &-input {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+    } 
+    
+    &__lists {
+        color: $gray-two;
+        line-height: 2;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+
+    &__label {
+        margin-bottom: .5rem;
+    }
+
+    &__input {
+        width: 25rem;
+        height: 2rem; 
+        padding: .5rem;
+        border: none;
+        border-bottom: 1px solid $black;
+    }
+
+    &__button {
+        background-color: $blue;
+        color: $white;
+        border: none;
+        padding: 1rem;  
+        cursor: pointer;
+        transition: all 1s linear;
+
+        &:hover {
+            background: $blue-two;
+        }
+    }
+
+    &__creator {
+        font-weight: normal;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    &__name {
+        line-height: 2;
+        a {
+            text-decoration: none;
+            color: inherit;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+}
