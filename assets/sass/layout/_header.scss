@@ -29,25 +29,13 @@
         align-items: center;
 
         @include phone {
-            display: initial;
-            text-align: center;
+            flex-direction: column;
             margin-bottom: 1rem;
         }
 
         @include tablet {
-            display: initial;
-            text-align: center;
+            flex-direction: column;
             margin-bottom: 1rem;
-        }
-    }
-
-    &__search {
-        display: flex;
-        align-items: center;
-        margin-left: 2rem;
-
-        @include notebook {
-            margin: 0 1rem 0 1rem;
         }
     }
 
@@ -57,6 +45,7 @@
         padding: 1rem;
         background: $white-two;
         width: 24rem;
+        margin-left: 2rem;
 
         &::placeholder {
             color: $gray;
@@ -67,9 +56,9 @@
             width: 15rem;
         }
 
-        // @include notebook {
-        //     width: 100%;
-        // }
+        @include notebook {
+            margin: 0 1rem 0 1rem;
+        }
     }
 
     &__button {

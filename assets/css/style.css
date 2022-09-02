@@ -56,6 +56,11 @@ body {
   background-color: #F5F5F5;
 }
 
+.body {
+  display: flex;
+  justify-content: center;
+}
+
 .header {
   background-color: #FFFFFF;
   padding: 2rem;
@@ -88,26 +93,14 @@ body {
 }
 @media (min-width: 375px) and (max-width: 540px) {
   .header__nav {
-    display: initial;
-    text-align: center;
+    flex-direction: column;
     margin-bottom: 1rem;
   }
 }
 @media (min-width: 541px) and (max-width: 768px) {
   .header__nav {
-    display: initial;
-    text-align: center;
+    flex-direction: column;
     margin-bottom: 1rem;
-  }
-}
-.header__search {
-  display: flex;
-  align-items: center;
-  margin-left: 2rem;
-}
-@media (min-width: 769px) and (max-width: 1279px) {
-  .header__search {
-    margin: 0 1rem 0 1rem;
   }
 }
 .header__input {
@@ -116,6 +109,7 @@ body {
   padding: 1rem;
   background: #F5F5F5;
   width: 24rem;
+  margin-left: 2rem;
 }
 .header__input::placeholder {
   color: #A2A2A2;
@@ -124,6 +118,11 @@ body {
 @media (min-width: 375px) and (max-width: 540px) {
   .header__input {
     width: 15rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 1279px) {
+  .header__input {
+    margin: 0 1rem 0 1rem;
   }
 }
 .header__button {
@@ -310,6 +309,13 @@ body {
   font-family: "Raleway", "sans-serif";
   font-weight: 600;
 }
+.footer.form {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  transform: translateY(10rem);
+}
 @media (min-width: 375px) and (max-width: 540px) {
   .footer__form {
     text-align: initial;
@@ -416,18 +422,38 @@ body {
 }
 
 .main__form {
-  height: 90vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+@media (min-width: 375px) and (max-width: 540px) {
+  .main__form {
+    top: 80%;
+  }
+}
+@media (min-width: 541px) and (max-width: 768px) {
+  .main__form {
+    top: 80%;
+  }
 }
 .main__form button {
   width: 25rem;
 }
+@media (min-width: 375px) and (max-width: 540px) {
+  .main__form button {
+    width: 18rem;
+  }
+}
+.main__form-content {
+  width: 100%;
+}
 .main__h1 {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 26px;
   text-align: center;
 }
 .main__input {
@@ -437,10 +463,18 @@ body {
   border: none;
   border-bottom: 1px solid #000000;
 }
-.main__email, .main__password {
+@media (min-width: 375px) and (max-width: 540px) {
+  .main__input {
+    width: 100%;
+  }
+}
+.main__info-form {
   display: flex;
   flex-direction: column;
   padding: 1rem;
+}
+.main__label {
+  margin-bottom: 1rem;
 }
 
 .main__title-products {

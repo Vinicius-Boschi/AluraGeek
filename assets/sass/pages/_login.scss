@@ -1,20 +1,38 @@
 .main {
     
     &__form {
-        height: 90vh;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+
+        @include phone {
+            top: 80%;
+        }
+
+        @include tablet {
+            top: 80%;
+        }
 
         button {
             width: 25rem;
+
+            @include phone {
+                width: 18rem;
+            }
+        }
+
+        &-content {
+            width: 100%;
         }
     }
 
     &__h1 {
         font-weight: bold;
-        font-size: 18px;
+        font-size: 26px;
         text-align: center;
     }
 
@@ -24,11 +42,19 @@
         padding: .5rem;
         border: none;
         border-bottom: 1px solid $black;
+
+        @include phone {
+            width: 100%;
+        }
     }
 
-    &__email, &__password {
+    &__info-form {
         display: flex;
         flex-direction: column;
         padding: 1rem;
+    }
+
+    &__label {
+        margin-bottom: 1rem;
     }
 }

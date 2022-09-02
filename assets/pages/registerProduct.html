@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Adicionar Produto</title>
+</head>
+<body class="body">
+
+    <header class="header">
+        <navbar class="header__navbar">
+            <div class="header__nav">
+                <img src="../img/Logo.png" alt="logo" class="header__logo">
+                <input class="header__input" type="text" name="search" id="search" placeholder="Oque deseja encontrar?">
+            </div>
+            <button type="submit" class="header__button">
+                <a href="#">Menu</a>
+            </button>
+        </navbar>
+    </header>
+
+    <main class="main">
+        <form action="#" class="main__form">
+            <div class="main__form-content">
+                <h1 class="main__h1">Adicionar novo produto</h1>
+                <div class="main__info-form">
+                    <label for="image" class="main__label">Url da imagem</label>
+                    <input type="text" name="image" id="image" class="main__input" placeholder="url da imagem" required>
+                </div>
+                <div class="main__info-form">
+                    <label for="category" class="main__label">Categoria</label>
+                    <input type="text" name="category" id="category" class="main__input" placeholder="consoles" required>
+                </div>
+                <div class="main__info-form">
+                    <label for="name" class="main__label">Nome do produto</label>
+                    <input type="name" name="name" id="name" class="main__input" placeholder="playstation 4" required>
+                </div>
+                <div class="main__info-form">
+                    <label for="price" class="main__label">Preço do produto</label>
+                    <input type="number" name="price" id="price" class="main__input" placeholder="R$ 60,00" required>
+                </div>
+            </div>
+            <button class="main__button">Adicionar produto</button>
+        </form>
+    </main>
+
+    <footer class="footer form">
+        <section class="footer__contact">
+            <img src="../img/Logo.png" alt="logo" class="footer__logo">
+            <ul class="footer__list">
+                <li class="footer__lists">
+                    <a href="#">Quem somos nós</a>
+                </li>
+                <li class="footer__lists">
+                    <a href="#">Política de Privacidade</a>
+                </li>
+                <li class="footer__lists">
+                    <a href="#">Programa de fidelidade</a>
+                </li>
+                <li class="footer__lists">
+                    <a href="#">Nossas lojas</a>
+                </li>
+                <li class="footer__lists">
+                    <a href="#">Quero ser franqueado</a>
+                </li>
+                <li class="footer__lists">
+                    <a href="#">Anuncie aqui</a>
+                </li>
+            </ul>
+            <form action="#" class="footer__form">
+                <h2 class="footer__title">Fale conosco</h2>
+                <div class="footer__contact-input">
+                    <label for="name" class="footer__label">Nome</label>
+                    <input type="text" name="name" id="name" class="footer__input" placeholder="André Lisboa">
+                </div>
+                <div class="footer__contact-input">
+                    <label for="name" class="footer__label">Mensagem</label>
+                    <textarea id="message" name="message" rows="5" cols="33" placeholder="Escreva sua mensagem" class="footer__input"></textarea>
+                </div>
+                <button class="footer__button">Enviar mensagem</button>
+            </form>
+        </section>
+        <div class="footer__creator">
+            <p class="footer__name">Desenvolvido por <a href="https://github.com/Vinicius-Boschi">Vinícius Boschi</a></p>
+            <p class="footer__copy">Todos os direitos reservados &copy; 2022</p>
+        </div>
+    </footer>
+
+    <script src="../js/navFixed.js"></script>
+    
+</body>
+</html>
