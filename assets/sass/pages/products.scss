@@ -1,0 +1,58 @@
+.main {
+
+    &__title-products {
+        font-size: 32px;
+        font-weight: bold;
+        display: flex;
+        margin-bottom: 2rem;
+        justify-content: space-between;
+
+        @include phone {
+            display: block;
+        }
+    }
+
+    &__h1-store {
+        margin-bottom: 1rem;
+    }
+
+    &__add {
+        background-color: $blue;
+        color: $white;
+        border: none;
+        padding: 1rem;
+        cursor: pointer;
+        transition: all 1s linear;
+
+        &:hover {
+            background: $blue-two;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+
+    &__products {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        line-height: 1.5;
+
+        @include phone {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include tablet {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include notebook {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    &__content-store {
+        margin-bottom: 3rem;
+    }
+}

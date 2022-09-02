@@ -1,4 +1,4 @@
-import { starwars, consoles, diversos } from './pictures.js'
+import { starwars, consoles, diversos } from '../index/pictures.js'
 
 let store = document.querySelector('.main__info-store')
 function showStarWarsItens() {

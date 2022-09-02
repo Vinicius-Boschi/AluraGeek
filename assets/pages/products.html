@@ -15,14 +15,28 @@
                 <img src="../img/Logo.png" alt="logo" class="header__logo">
                 <div class="header__search">
                     <input class="header__input" type="text" name="search" id="search" placeholder="Oque deseja encontrar?">
-                    <img src="../img/Icone.png" alt="icone de pesquisa" class="header__input-img">
                 </div>
             </div>
         </navbar>
     </header>
 
     <main class="main">
-        
+        <div class="main__content">
+            <div class="main__info">
+                <h1 class="main__title">Dezembro Promocional</h1>
+                <h2 class="main__subtitle">Produtos selecionados com 33% de desconto.</h2>
+            </div>
+        </div>
+
+        <section class="main__store">
+            <div class="main__title-products">
+                <h1 class="main__h1-store">Todos os produtos</h1>
+                <button class="main__add">
+                    <a href="registerProduct.html">Adicionar Produto</a>
+                </button>
+            </div>
+            <div class="main__products"></div>
+        </section>
     </main>
 
     <footer class="footer">
@@ -66,6 +80,9 @@
             <p class="footer__copy">Todos os direitos reservados &copy; 2022</p>
         </div>
     </footer>
+
+    <script src="../js/products/products.js" type="module"></script>
+    <script src="../js/navFixed.js"></script>
     
 </body>
 </html>
