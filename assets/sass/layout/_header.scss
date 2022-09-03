@@ -1,17 +1,12 @@
 .header {
     background-color: $white;
-    padding: 2rem;
-    width: calc(100% - 4rem);
-    position: fixed;
-    z-index: 1;
-
-    &-fixed {
-        background-color: $light-blue;
-    }
 
     &__navbar {
+        width: 90vw;
+        margin: 0 auto;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        padding: 1rem;
 
         @include phone {
             display: grid;
@@ -22,11 +17,15 @@
             display: grid;
             justify-items: center;
         }
+
+        a {
+            text-align: center;
+        }
     }
 
     &__nav {
         display: flex;
-        align-items: center;
+    	justify-content: space-between;
 
         @include phone {
             flex-direction: column;

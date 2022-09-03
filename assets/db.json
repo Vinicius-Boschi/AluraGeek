@@ -1,0 +1,130 @@
+{
+  "profile": [
+    {
+      "image": "https://user-images.githubusercontent.com/74377158/187973311-d1138df4-68a7-4363-ae69-fea22b7f4f9e.png",
+      "category": "star wars",
+      "name": "Caneca do stormtrooper",
+      "price": "R$78,90",
+      "id": 1
+    },
+    {
+      "image": "https://user-images.githubusercontent.com/74377158/187973312-2272f800-ae6f-40f3-8ca3-b9f830ab0034.png",
+      "category": "star wars",
+      "name": "Lego Star Wars",
+      "price": "R$587,90",
+      "id": 2
+    },
+    {
+      "image": "https://user-images.githubusercontent.com/74377158/187973302-df67e505-d6d6-47c7-b04e-cbbefdada40a.png",
+      "category": "star wars",
+      "name": "Boneco do Yoda",
+      "price": "R$289,99",
+      "id": 3
+    },
+    {
+      "image": "https://user-images.githubusercontent.com/74377158/187973305-3767792c-06c9-4c83-9563-a35010ee1b46.png",
+      "category": "star wars",
+      "name": "Boneco do Stormtrooper",
+      "price": "R$159,92",
+      "id": 4
+    },
+    {
+      "image": "https://user-images.githubusercontent.com/74377158/187973307-81ba6cd0-3a99-4218-bde7-c39a5ac86e6c.png",
+      "category": "star wars",
+      "name": "Boneco do Baby Yoda",
+      "price": "R$139,90",
+      "id": 5
+    },
+    {
+      "image": "https://user-images.githubusercontent.com/74377158/187973309-b7308832-4114-462f-b961-7307dcde587b.png",
+      "category": "star wars",
+      "name": "Boneco do Kylo Ren",
+      "price": "R$111,99",
+      "id": 6
+    },
+    {
+      "image": "https://user-images.githubusercontent.com/74377158/187974311-14bdbf60-07a6-4bc5-bab5-08bbd5867a0b.png",
+      "category": "consoles",
+      "name": "Controle Xbox One",
+      "price": "R$239,90",
+      "id": 7
+    },
+    {
+      "image": "https://user-images.githubusercontent.com/74377158/187974314-5f71fffc-a62d-4fc4-8f5a-b32830af498f.png",
+      "category": "consol.es",
+      "name": "Playstation 5",
+      "price": "R$4.749,90",
+      "id": 8
+    },
+    {
+      "image": "https://user-images.githubusercontent.com/74377158/187974315-16c0429a-6288-474f-92e5-1e4f9196503f.png",
+      "category": "consoles",
+      "name": "Nintendo",
+      "price": "R$130,65",
+      "id": 9
+    },
+    {
+      "image": "https://user-images.githubusercontent.com/74377158/187974316-2c2619eb-5fa6-47d4-afee-d5e6b1821a7e.png",
+      "category": "consoles",
+      "name": "Nintendo Switch",
+      "price": "R$2.098,90",
+      "id": 10
+    },
+    {
+      "image": "https://user-images.githubusercontent.com/74377158/187974320-c7f4435d-2960-4f5b-8be2-ba5a6761925b.png",
+      "category": "consoles",
+      "name": "Xbox Series X",
+      "price": "R$4.274,91",
+      "id": 11
+    },
+    {
+      "image": "https://user-images.githubusercontent.com/74377158/187974321-32f13b59-f40c-43cc-8abb-ef0d67bb35aa.png",
+      "category": "consoles",
+      "name": "Game Boy",
+      "price": "R$998,90",
+      "id": 12
+    },
+    {
+      "image": "https://user-images.githubusercontent.com/74377158/187974807-30726213-74c7-4bcc-9a71-e806f079c4c6.png",
+      "category": "diversos",
+      "name": "Camisa Atari",
+      "price": "R$39,90",
+      "id": 13
+    },
+    {
+      "image": "https://user-images.githubusercontent.com/74377158/187974812-a6548bf4-226f-4bc4-a4f8-bd17ab3a482b.png",
+      "category": "diversos",
+      "name": "Controle Nintendo Switch",
+      "price": "R$334,90",
+      "id": 14
+    },
+    {
+      "image": "https://user-images.githubusercontent.com/74377158/187974814-7bbe11c2-94f6-49dc-9c46-510cffef55ec.png",
+      "category": "diversos",
+      "name": "Boneco do Sonic",
+      "price": "R$329,90",
+      "id": 15
+    },
+    {
+      "image": "https://user-images.githubusercontent.com/74377158/187974815-7aa9319b-831e-4b72-b8cf-681b01c2b4e4.png",
+      "category": "diversos",
+      "name": "Rádio antigo",
+      "price": "R$119,90",
+      "id": 16
+    },
+    {
+      "image": "https://user-images.githubusercontent.com/74377158/187974816-c509d460-3c5c-4546-8992-9441223b4f65.png",
+      "category": "diversos",
+      "name": "Óculos Quest 2",
+      "price": "R$3.548,90",
+      "id": 17
+    },
+    {
+      "image": "https://user-images.githubusercontent.com/74377158/187974820-59ada99f-1b22-4b5d-aa08-d81ad506080e.png",
+      "category": "diversos",
+      "name": "Pikachu de pelúcia",
+      "price": "R$135,12",
+      "id": 18
+    }
+  ]
+}

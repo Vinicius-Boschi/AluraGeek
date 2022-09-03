@@ -6,7 +6,17 @@ body {
     background-color: $white-two;
 }
 
-.body {
-    display: flex;
-    justify-content: center;
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: $gray;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $blue;
+    border-radius: 20px;
+    visibility: visible;
 }

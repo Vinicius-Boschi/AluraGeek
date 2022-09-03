@@ -56,24 +56,30 @@ body {
   background-color: #F5F5F5;
 }
 
-.body {
-  display: flex;
-  justify-content: center;
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #A2A2A2;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2A7AE4;
+  border-radius: 20px;
+  visibility: visible;
 }
 
 .header {
   background-color: #FFFFFF;
-  padding: 2rem;
-  width: calc(100% - 4rem);
-  position: fixed;
-  z-index: 1;
-}
-.header-fixed {
-  background-color: #E0EAF9;
 }
 .header__navbar {
+  width: 90vw;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 1rem;
 }
 @media (min-width: 375px) and (max-width: 540px) {
   .header__navbar {
@@ -87,9 +93,12 @@ body {
     justify-items: center;
   }
 }
+.header__navbar a {
+  text-align: center;
+}
 .header__nav {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
 }
 @media (min-width: 375px) and (max-width: 540px) {
   .header__nav {
@@ -248,7 +257,7 @@ body {
 .main__link.right {
   margin-right: 4rem;
 }
-.main__link a {
+.main a {
   text-decoration: none;
   color: inherit;
 }
@@ -274,7 +283,13 @@ body {
 }
 .main__action {
   position: absolute;
+}
+.main__action img {
   cursor: pointer;
+}
+.main__btn-delete {
+  background: none;
+  border: none;
 }
 @media (min-width: 375px) and (max-width: 540px) {
   .main__img {
@@ -303,6 +318,7 @@ body {
 }
 .main__price {
   font-weight: bold;
+  letter-spacing: 2px;
 }
 
 .footer {
@@ -425,20 +441,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%);
-}
-@media (min-width: 375px) and (max-width: 540px) {
-  .main__form {
-    top: 80%;
-  }
-}
-@media (min-width: 541px) and (max-width: 768px) {
-  .main__form {
-    top: 80%;
-  }
 }
 .main__form button {
   width: 25rem;
@@ -455,6 +457,7 @@ body {
   font-weight: bold;
   font-size: 26px;
   text-align: center;
+  margin-bottom: 1rem;
 }
 .main__input {
   width: 25rem;
@@ -529,6 +532,30 @@ body {
 }
 .main__content-store {
   margin-bottom: 3rem;
+}
+
+.main.concluded {
+  display: flex;
+  justify-content: center;
+  margin: 6rem;
+}
+.main__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightblue;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 45rem;
+  padding: 1.75rem;
+  box-sizing: border-box;
+}
+.main__span {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-bottom: 1rem;
+  background-image: url("../img/checkmark.svg");
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

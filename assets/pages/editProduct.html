@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Produtos - Home</title>
+    <title>Editar Produto</title>
 </head>
 <body>
 
@@ -17,26 +17,35 @@
                 </a>
                 <input class="header__input" type="text" name="search" id="search" placeholder="Oque deseja encontrar?">
             </div>
+            <button type="submit" class="header__button">
+                <a href="#">Menu</a>
+            </button>
         </navbar>
     </header>
 
-    <main class="main">
-        <div class="main__content">
-            <div class="main__info">
-                <h1 class="main__title">Dezembro Promocional</h1>
-                <h2 class="main__subtitle">Produtos selecionados com 33% de desconto.</h2>
+    <main class="main concluded">
+        <form action="#" class="main__form" data-form>
+            <div class="main__form-content">
+                <h1 class="main__h1">Editar produto</h1>
+                <div class="main__info-form">
+                    <label for="image" class="main__label">Url da imagem</label>
+                    <input type="text" name="image" id="image" class="main__input" placeholder="url da imagem" data-image required>
+                </div>
+                <div class="main__info-form">
+                    <label for="category" class="main__label">Categoria</label>
+                    <input type="text" name="category" id="category" class="main__input" placeholder="consoles" data-category required>
+                </div>
+                <div class="main__info-form">
+                    <label for="name" class="main__label">Nome do produto</label>
+                    <input type="name" name="name" id="name" class="main__input" placeholder="playstation 4" data-name required>
+                </div>
+                <div class="main__info-form">
+                    <label for="price" class="main__label">Preço do produto</label>
+                    <input inputmode="numeric" name="price" id="price" class="main__input" placeholder="R$ 60,00" data-price required>
+                </div>
             </div>
-        </div>
-
-        <section class="main__store">
-            <div class="main__title-products">
-                <h1 class="main__h1-store">Todos os produtos</h1>
-                <button class="main__add">
-                    <a href="registerProduct.html">Adicionar Produto</a>
-                </button>
-            </div>
-            <div class="main__products" data-products></div>
-        </section>
+            <button type="submit" class="main__button">Editar produto</button>
+        </form>
     </main>
 
     <footer class="footer">
@@ -81,7 +90,9 @@
         </div>
     </footer>
 
-    <script src="../js/controller/productsList.js" type="module"></script>
+    <script src="../js/controller/updateProduct.js" type="module"></script>
+    <script src="https://github.com/codermarcos/simple-mask-money/releases/download/v3.0.0/simple-mask-money.js"></script>
+    <script src="../js/validation/formatMoney.js"></script>
     
 </body>
 </html>

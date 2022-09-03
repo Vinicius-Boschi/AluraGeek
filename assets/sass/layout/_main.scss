@@ -102,11 +102,11 @@
         &.right {
             margin-right: 4rem;
         }
+    }
 
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
+    a {
+        text-decoration: none;
+        color: inherit;
     }
 
     &__info-store {
@@ -129,7 +129,15 @@
 
     &__action {
         position: absolute;
-        cursor: pointer;
+        
+        img {
+            cursor: pointer;
+        }
+    }
+
+    &__btn-delete {
+        background: none;
+        border: none;
     }
 
     &__img {
@@ -158,5 +166,6 @@
 
     &__price {
         font-weight: bold;
+        letter-spacing: 2px;
     }
 }

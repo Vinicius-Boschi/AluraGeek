@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>Adicionar Produto</title>
 </head>
-<body class="body">
+<body>
 
     <header class="header">
         <navbar class="header__navbar">
             <div class="header__nav">
-                <img src="../img/Logo.png" alt="logo" class="header__logo">
+                <a href="/index.html">
+                    <img src="../img/Logo.png" alt="logo" class="header__logo">
+                </a>
                 <input class="header__input" type="text" name="search" id="search" placeholder="Oque deseja encontrar?">
             </div>
             <button type="submit" class="header__button">
@@ -21,32 +23,32 @@
         </navbar>
     </header>
 
-    <main class="main">
-        <form action="#" class="main__form">
+    <main class="main concluded">
+        <form action="#" class="main__form" data-form>
             <div class="main__form-content">
                 <h1 class="main__h1">Adicionar novo produto</h1>
                 <div class="main__info-form">
                     <label for="image" class="main__label">Url da imagem</label>
-                    <input type="text" name="image" id="image" class="main__input" placeholder="url da imagem" required>
+                    <input type="text" name="image" id="image" class="main__input" placeholder="url da imagem" data-image required>
                 </div>
                 <div class="main__info-form">
                     <label for="category" class="main__label">Categoria</label>
-                    <input type="text" name="category" id="category" class="main__input" placeholder="consoles" required>
+                    <input type="text" name="category" id="category" class="main__input" placeholder="consoles" data-category required>
                 </div>
                 <div class="main__info-form">
                     <label for="name" class="main__label">Nome do produto</label>
-                    <input type="name" name="name" id="name" class="main__input" placeholder="playstation 4" required>
+                    <input type="name" name="name" id="name" class="main__input" placeholder="playstation 4" data-name required>
                 </div>
                 <div class="main__info-form">
                     <label for="price" class="main__label">Preço do produto</label>
-                    <input type="number" name="price" id="price" class="main__input" placeholder="R$ 60,00" required>
+                    <input inputmode="numeric" name="price" id="price" class="main__input" placeholder="R$ 60,00" data-price required>
                 </div>
             </div>
             <button class="main__button">Adicionar produto</button>
         </form>
     </main>
 
-    <footer class="footer form">
+    <footer class="footer">
         <section class="footer__contact">
             <img src="../img/Logo.png" alt="logo" class="footer__logo">
             <ul class="footer__list">
@@ -88,7 +90,9 @@
         </div>
     </footer>
 
-    <script src="../js/navFixed.js"></script>
+    <script src="../js/controller/registerProduct.js" type="module"></script>
+    <script src="https://github.com/codermarcos/simple-mask-money/releases/download/v3.0.0/simple-mask-money.js"></script>
+    <script src="../js/validation/formatMoney.js"></script>
     
 </body>
 </html>
